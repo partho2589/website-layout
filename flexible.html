@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible-box</title>
+    <style>
+        .box{
+            width: 200px;
+            
+            border: 3px dashed skyblue;
+            font-size: 3em;
+        }
+        .controal{
+            display: flex;
+            border: 2px solid rebeccapurple;
+            height: 500px;
+            justify-content:center;
+        }
+        #box-1{
+            flex-grow: 8 ;
+        }
+        #box-2{flex-grow: 1;}
+    </style>
+</head>
+<body>
+    <h1> I am flexible right now.</h1>
+<div class="controal">
+    <div id="box-1" class="box">box1</div>
+    <div id="box-2" class="box">box2</div>
+    
+</div>
+
+</body>
+</html>
